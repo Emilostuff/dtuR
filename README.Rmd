@@ -28,6 +28,12 @@ You can install the released version of dtuR from [CRAN](https://CRAN.R-project.
 install.packages("dtuR")
 ```
 
+And the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("Emilostuff/dtuR")
+```
 ## Example
 
 This is a basic example which shows you how to solve a common problem:
