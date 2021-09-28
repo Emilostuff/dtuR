@@ -1,10 +1,10 @@
 Package: dtuR
 Type: Package
-Title: Statistics at DTU
+Title: Statistics Companion
 Version: 0.1.0
 Author: Emil Skydsgaard
 Maintainer: Emil Skydsgaard <emilskydsgaard@gmail.com>
-Description: Provides a collection of useful functions for students learning statistics or data analysis at DTU.
+Description: Provides a collection of useful functions for students learning statistics or data analysis.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
