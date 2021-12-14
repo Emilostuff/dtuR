@@ -7,7 +7,6 @@
 #' @return
 #' @export
 #'
-#' @examples
 data_from_count <- function(labels, count) {
   if (length(labels) != length(count)) {
     NA

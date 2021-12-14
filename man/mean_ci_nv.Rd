@@ -11,7 +11,7 @@ mean_ci_nv(mu, s, n, c = 0.95)
 
 \item{s}{standard deviation}
 
-\item{n}{degrees of freedom}
+\item{n}{number of observations}
 
 \item{c}{confidence (between 0..1)}
 }
@@ -20,7 +20,4 @@ mean_ci_nv(mu, s, n, c = 0.95)
 }
 \description{
 Mean Confidence Interval - No Vector
-}
-\examples{
-mean_ci_nv(mu = -0.1181818, s = 0.05884899, n = 22)
 }

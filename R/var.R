@@ -7,7 +7,6 @@
 #' @return
 #' @export
 #'
-#' @examples
 var_percent <- function(values, distribution) {
   if (sum(distribution) != 1) {
     stop("Distribution does not add up to 1")
@@ -24,7 +23,19 @@ var_percent <- function(values, distribution) {
 #' @return
 #' @export
 #'
-#' @examples
 var_ci <- function(x, c = 0.95) {
-  c((length(x)-1)*var(x)/qchisq((1+c)/2, df=(length(x)-1)), (length(x)-1)*var(x)/qchisq(1-(1+c)/2, df=(length(x)-1)))
+    var_ci_nv(sd(x), length(x), c = c)
+}
+
+#' Variance Confidence Interval - No Vector
+#'
+#' @param s standard deviation
+#' @param n number of observations
+#' @param c confidence (between 0..1)
+#'
+#' @return
+#' @export
+#'
+var_ci_nv <- function(s, n, c = 0.95) {
+  c((n-1)*s^2/qchisq((1+c)/2, df=(n-1)), (n-1)*s^2/qchisq(1-(1+c)/2, df=(n-1)))
 }

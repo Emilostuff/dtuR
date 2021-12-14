@@ -7,7 +7,6 @@
 #' @return
 #' @export
 #'
-#' @examples
 qq_plot <- function(x, padding=0.2) {
   range <- max(x)-min(x)
   qqnorm(x, ylim=c(min(x)-padding*range,max(x)+padding*range))
@@ -22,7 +21,6 @@ qq_plot <- function(x, padding=0.2) {
 #' @return
 #' @export
 #'
-#' @examples
 ecdf_plot <- function(x) {
   plot(ecdf(x), verticals=TRUE)
   xseq <- seq(0.9*min(x), 1.1*max(x), length.out=10000)
