@@ -30,6 +30,11 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(dtuR)
+#> 
+#> Vedhæfter pakke: 'dtuR'
+#> Det følgende objekt er maskeret fra 'package:stats':
+#> 
+#>     IQR
 ## basic example code
 ```
 

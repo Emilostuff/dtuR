@@ -32,5 +32,5 @@ sd_ci <- function(x, c = 0.95) {
 #' @export
 #'
 sd_ci_nv <- function(s, n, c = 0.95) {
-  sqrt(var_ci_nv(s, n, c = 0.95))
+  sqrt(var_ci_nv(s, n, c = c))
 }
